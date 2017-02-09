@@ -31,7 +31,7 @@ function setHiddenFields() {
 
     answer_no_zeros = Math.floor(Math.random() * 9999).toString();
     prefix = "";
-    for (var i = 0; i < answer_no_zeros.length - 4; i++) {
+    for (var i = 0; i < 4 - answer_no_zeros.length; i++) {
         prefix += "0";
     }
     answer.value = prefix + answer_no_zeros;
